@@ -1,0 +1,30 @@
+.contactList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap; /* Додаємо можливість переносу елементів на новий рядок */
+}
+
+.contactList .contactItem {
+  margin-bottom: 5px;
+  flex-basis: 100%; /* Елементи контакту займають всю ширину на малих екранах */
+  max-width: 400px; /* Обмежуємо максимальну ширину кожного контакту */
+}
+
+/* Адаптивні стилі для планшетів */
+@media (min-width: 768px) {
+  .contactList .contactItem {
+    flex-basis: 45%; /* Два контакти в ряд на планшетах */
+  }
+}
+
+/* Адаптивні стилі для настільних комп'ютерів */
+@media (min-width: 1024px) {
+  .contactList .contactItem {
+    flex-basis: 30%; /* Три контакти в ряд на великих екранах */
+  }
+}

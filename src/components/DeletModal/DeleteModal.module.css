@@ -1,0 +1,14 @@
+.closeBtn {
+    border-radius: 0;
+    border: 0px;
+    padding: 0;
+    background-color: transparent;
+    margin-left: auto;
+    display: block;
+  }
+  .title {
+    margin-bottom: 20px;
+  }
+  .deleteBtn {
+    margin-right: 40px;
+  }
